@@ -2,7 +2,12 @@ import React from 'react'
 
 const GetApp = () => {
   return (
-    <div>GetApp</div>
+    <section className='flexCenter w-full flex-col pb-[100px]'>
+      <div className='get-app'>
+        
+      </div>
+
+    </section>
   )
 }
 
