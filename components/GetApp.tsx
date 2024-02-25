@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import Image from "next/image";
 
 const GetApp = () => {
   return (
@@ -13,18 +14,18 @@ const GetApp = () => {
          */}
         <div className="z-20 flex w-full flex-1 flex-col items-start justify-center gap-12">
           <h2 className="bold-40 lg:bold-64 xl:max-w-[320px]">
-            get for free now
+            Get for free now
           </h2>
           <p className="regular-16 text-gray-10">Availabe on iOS and Android</p>
           <div className="flex w-full flex-col gap-3 whitespace-nowrap xl:flex-row ">
-            <Button 
+            <Button
               type="button"
               title="App Store"
               icon="/apple.svg"
               variant="btn_white"
               full
             />
-             <Button 
+            <Button
               type="button"
               title="Play Store"
               icon="/android.svg"
@@ -32,6 +33,11 @@ const GetApp = () => {
               full
             />
           </div>
+        </div>
+
+        {/* R side of app if seen on large screen */}
+        <div className="flex flex-1 items-center justify-end">
+          <Image src="/phones.png" alt="phones" width={550} height={870} />
         </div>
       </div>
     </section>
